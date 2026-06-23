@@ -272,7 +272,7 @@
  user-select: none; pointer-events: none;
  }
 
- /* Photo collage (right side) */.relationships-right { position: relative; }.photo-arch {
+ /* Photo (right side) */.relationships-right { position: relative; }.relationships-photo-wrap { position: relative; height: 520px; border-radius: 4px; overflow: hidden; box-shadow: 0 12px 48px rgba(34,53,71,0.18); }.relationships-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }.photo-arch {
  position: absolute; top: -6%; left: -12%;
  width: 70%; height: 112%;
  border: 1px solid rgba(197,176,138,0.4);
@@ -309,12 +309,12 @@
  /* =============================================
  AWARDS ROW
  ============================================= */.section-awards {
- background: var(--soft-cream); padding: 40px 0;
- border-bottom: 1px solid var(--light-stone);
+ background: var(--midnight-navy); padding: 40px 0;
+ border-bottom: 1px solid rgba(197,176,138,0.2);
  }.awards-inner {
  display: flex; align-items: center;
  justify-content: center; gap: 48px; flex-wrap: wrap;
- }.award-item { display: flex; align-items: center; justify-content: center; padding: 8px 12px; }.award-item img { max-height: 72px; width: auto; opacity: 0.88; transition: opacity 0.2s; }.award-item img:hover { opacity: 1; }.award-disclosure { width: 100%; text-align: center; font-size: 0.72rem; color: var(--text-secondary); letter-spacing: 0.06em; font-weight: 500; }
+ }.award-item { display: flex; align-items: center; justify-content: center; padding: 8px 12px; }.award-item img { max-height: 72px; width: auto; opacity: 0.88; transition: opacity 0.2s; }.award-item img:hover { opacity: 1; }.award-disclosure { width: 100%; text-align: center; font-size: 0.72rem; color: rgba(255,255,255,0.55); letter-spacing: 0.06em; font-weight: 500; }
 
  /* =============================================
  IN THE MEDIA
@@ -1034,9 +1034,7 @@
 
  <!-- HERO -->
  <section class="hero" aria-labelledby="hero-h1">
- <video class="hero-video" autoplay loop muted playsinline aria-hidden="true">
- <source src="hero-ocean-new.mp4" type="video/mp4" />
- </video>
+ <img class="hero-video" src="https://static.fmgsuite.com/media/RotatorImage/variantSize/14bf22f5-0d96-4a11-9ecf-b969b811eca9.jpg" alt="" aria-hidden="true" />
  <div class="hero-overlay" aria-hidden="true"></div>
  <div class="hero-shimmer" aria-hidden="true"></div>
  <div class="container">
@@ -1139,37 +1137,8 @@
 
  <!-- RIGHT: Photo collage -->
  <div class="relationships-right">
- <div class="photo-arch" aria-hidden="true"></div>
- <div class="photo-grid">
-
- <!-- Top-left: Team hands — community / partnership -->
- <div class="photo-cell">
- <img src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/bbf49e1f-cfed-4eb5-b9e5-a4e275747b05.jpg?v=1" alt="WCG advisor community — shared commitment" />
- </div>
-
- <!-- Top-right: Advisor community walking — warm outdoor tones -->
- <div class="photo-cell">
- <img src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/a2a9f554-c4eb-4d7b-8809-7adf55384c9b.jpg?v=1" alt="WCG advisor team" />
- </div>
-
- <!-- Bottom-left: Two advisors at laptop — warm neutral office -->
- <div class="photo-cell">
- <img src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/261935d4-3c6c-40ea-a171-3f4b2a0db851.jpg?v=1" alt="WCG advisors collaborating" />
- </div>
-
- <!-- Bottom-right: Couple with advisor — warm living room consultation -->
- <div class="photo-cell">
- <img src="https://static.fmgsuite.com/media/WebsiteBoxImage/originalSize/868430d9-730c-411f-ae55-189ea749dc71.jpg?v=1" alt="Couple meeting with their WCG advisor" />
- </div>
-
- <!-- Center community badge -->
- <div class="photo-badge" aria-hidden="true">
- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
- <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
- </svg>
- </div>
-
- </div>
+ <div class="relationships-photo-wrap">
+ <img src="https://static.fmgsuite.com/media/SectionBackgroundImage/originalSize/82ecfec7-0a55-46c0-8e79-571a168ad396.jpg" alt="WCG advisors and clients — Building Relationships That Last" />
  </div>
 
  </div>
